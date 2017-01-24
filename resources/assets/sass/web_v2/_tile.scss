@@ -1,0 +1,33 @@
+.tile {
+	position: relative;
+	img.tile-row-1 {
+		width: 100%;
+		height: 253px;
+	}
+	img.tile-row-2 {
+		width: 100%;
+		height: 346px;
+	}
+	div.jumbotron {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.1);
+	    -webkit-transition: background-color 600ms;
+	    -moz-transition: background-color 600ms;
+	    -o-transition: background-color 600ms;
+	    transition: background-color 600ms;		
+		color: #fff;
+		h2, h4 {
+			position: absolute;
+			top: 45%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			font-weight: 300;
+		}
+	}
+	div.jumbotron:hover {
+		background-color: rgba(0, 0, 0, 0.2);
+	}	
+}

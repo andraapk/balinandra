@@ -1,0 +1,10 @@
+.breadcrumb li{
+	a {
+		color: $grey-dark;
+		font-weight: 300;
+	}
+	&.active a {
+		color: $black;
+		font-weight: 400;
+	}
+}

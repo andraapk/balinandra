@@ -1,0 +1,518 @@
+// --------------------
+// 1. FONT
+// 2. BORDER
+// 3. SPACING
+// 4. INPUT
+// 5. BACKGROUND
+// 6. POSITION
+// --------------------
+
+// -----------------
+// 1. FONT
+// -----------------
+.text-xxxl{				font-size: $text-xxxl !important;}
+.text-xxl{				font-size: $text-xxl !important;}
+.text-xl{				font-size: $text-xl !important;}
+.text-lg{				font-size: $text-lg !important;}
+.text-md{				font-size: $text-md !important;}
+.text-regular{			font-size: $text-regular !important;}
+.text-sm{				font-size: $text-sm !important;}
+.text-xs{				font-size: $text-xs !important;}
+
+// WEIGHT
+.text-xbold{			font-weight: 800 !important;}
+.text-bold{				font-weight: 700 !important;}
+.text-normal{			font-weight: 400 !important;}
+.text-light{			font-weight: 300 !important;}
+.text-superlight{		font-weight: 200 !important;}
+
+// COLOR
+.text-white{			color: $white !important;}
+.text-black{			color: $black !important;}
+.text-red{				color: $red !important;}
+.text-grey{				color: $grey !important;}
+.text-grey-dark{		color: $grey-dark !important;}
+.text-grey-light{		color: $grey-light !important;}
+.text-grey-lightest{	color: #989898 !important;}
+.text-green{			color: green !important;}
+.text-orange{			color: $orange !important;}
+
+// MODIFICATION
+.text-uppercase{		text-transform: uppercase;}
+.text-strikethrough{	
+	position: relative;
+	&::after {
+		position: absolute;
+		border-bottom: 0.180em solid rgba(255, 0, 0, 0.8);
+		content: "";
+		left: 0;
+		line-height: 1em;
+		margin-top: calc(0.200em / 2 * -1);
+		right: 0;
+		top: 50%;
+		max-width: inherit;
+	}
+}
+.text-shadow{					text-shadow:1px 2px 4px rgba(0, 0, 0, 0.1);}
+.text-underline{				text-decoration: underline;}
+
+// LINK
+a:hover, a:active {				text-decoration: none;}
+a.hover-grey:hover{				color: $grey !important;}
+a.hover-grey-dark:hover{		color: $grey-dark !important;}
+a.hover-black:hover{			color: $black !important;}
+a.hover-white:hover{			color: $white !important;}
+a.hover-gold:hover{				color: $gold-light !important;}
+a.hover-red:hover{				color: $red !important;}
+a.hover-orange:hover{			color: $orange !important;}
+
+// TEXT
+p{								line-height: 2em;}
+
+// LETTER SPACE
+.letter-space-xs{				letter-spacing: 0.02em;}
+.letter-space-sm{				letter-spacing: 0.04em;}
+.letter-space-regular{			letter-spacing: 0.06em;}
+.letter-space-md{				letter-spacing: 0.08em;}
+.letter-space-lg{				letter-spacing: 0.1em;}
+
+.line-height-5{					line-height: 5px;}
+.line-height-10{				line-height: 10px;}
+.line-height-15{				line-height: 15px;}
+.line-height-20{				line-height: 20px;}
+.line-height-25{				line-height: 25px;}
+.line-height-30{				line-height: 30px;}
+
+
+// -----------------
+// 2. BORDER
+// -----------------
+.border-0{				border-width: $space-0;}
+.border-1{				border-width: $space-1;}
+.border-2{				border-width: $space-2;}
+.border-3{				border-width: $space-3;}
+.border-4{				border-width: $space-4;}
+
+.border-right-0{		border-right: $space-0 solid !important;}
+.border-right-1{		border-right: $space-1 solid !important;}
+.border-right-2{		border-right: $space-2 solid !important;}
+.border-right-3{		border-right: $space-3 solid !important;}
+.border-right-4{		border-right: $space-4 solid !important;}
+
+.border-left-0{			border-left: $space-0 solid !important;}
+.border-left-1{			border-left: $space-1 solid !important;}
+.border-left-2{			border-left: $space-2 solid !important;}
+.border-left-3{			border-left: $space-3 solid !important;}
+.border-left-4{			border-left: $space-4 solid !important;}
+
+.border-top-0{			border-top: $space-0 solid !important;}
+.border-top-1{			border-top: $space-1 solid !important;}
+.border-top-2{			border-top: $space-2 solid !important;}
+.border-top-3{			border-top: $space-3 solid !important;}
+.border-top-4{			border-top: $space-4 solid !important;}
+
+.border-bottom-0{		border-bottom: $space-0 solid !important;}
+.border-bottom-1{		border-bottom: $space-1 solid !important;}
+.border-bottom-2{		border-bottom: $space-2 solid !important;}
+.border-bottom-3{		border-bottom: $space-3 solid !important;}
+.border-bottom-4{		border-bottom: $space-4 solid !important;}
+
+.border-black{			border-color: $black !important;}
+.border-white{			border-color: $white !important;}
+.border-grey{			border-color: $grey !important;}
+.border-grey-dark{		border-color: $grey-dark !important;}
+.border-grey-light{		border-color: $grey-light !important;}
+.border-transparent{	border-color: transparent !important;}
+
+.border-solid{			border-style: solid !important;}
+.border-size{			
+	border-bottom: 2px solid $grey-dark;
+	width: 20%;
+}
+
+// -----------------
+// 3. SPACING
+// -----------------
+// MARGIN
+.m-0{										margin: $space-0 !important;}
+.m-5{										margin: $space-5 !important;}
+.m-xs{										margin: $space-xs !important;}
+.m-sm{										margin: $space-sm !important;}
+.m-md{										margin: $space-md !important;}
+.m-lg{										margin: $space-lg !important;}
+.m-xl{										margin: $space-xl !important;}
+.m-xxl{										margin: $space-xxl !important;}
+.m-xxxl{									margin: $space-xxxl !important;}
+
+// margin minus
+.mtm-lg{									margin-top: -$space-lg !important;}
+.mbm-lg{									margin-bottom: -$space-lg !important;}
+.mlm-lg{									margin-left: -$space-lg !important;}
+.mrm-lg{									margin-right: -$space-lg !important;}
+
+.mtm-md{									margin-top: -$space-md !important;}
+.mbm-md{									margin-bottom: -$space-md !important;}
+.mlm-md{									margin-left: -$space-md !important;}
+.mrm-md{									margin-right: -$space-md !important;}
+
+.mtm-sm{									margin-top: -$space-sm !important;}
+.mbm-sm{									margin-bottom: -$space-sm !important;}
+.mlm-sm{									margin-left: -$space-sm !important;}
+.mrm-sm{									margin-right: -$space-sm !important;}
+
+.mtm-xs{									margin-top: -$space-xs !important;}
+.mbm-xs{									margin-bottom: -$space-xs !important;}
+.mlm-xs{									margin-left: -$space-xs !important;}
+.mrm-xs{									margin-right: -$space-xs !important;}
+
+.mtm-8{										margin-top: -$space-8 !important;}
+.mbm-8{										margin-bottom: -$space-8 !important;}
+.mlm-8{										margin-left: -$space-8 !important;}
+.mrm-8{										margin-right: -$space-8 !important;}
+
+.mtm-5{										margin-top: -$space-5 !important;}
+.mbm-5{										margin-bottom: -$space-5 !important;}
+.mlm-5{										margin-left: -$space-5 !important;}
+.mrm-5{										margin-right: -$space-5 !important;}
+
+.mtm-3{										margin-top: -$space-3 !important;}
+.mbm-3{										margin-bottom: -$space-3 !important;}
+.mlm-3{										margin-left: -$space-3 !important;}
+.mrm-3{										margin-right: -$space-3 !important;}
+
+.mt-0{										margin-top: $space-0 !important;}
+.mb-0{										margin-bottom: $space-0 !important;}
+.ml-0{										margin-left: $space-0 !important;}
+.mr-0{										margin-right: $space-0 !important;}
+
+// margin plus
+.mt-1{										margin-top: $space-1 !important;}
+.mb-1{										margin-bottom: $space-1 !important;}
+.ml-1{										margin-left: $space-1 !important;}
+.mr-1{										margin-right: $space-1 !important;}
+
+.mt-5{										margin-top: $space-5 !important;}
+.mb-5{										margin-bottom: $space-5 !important;}
+.ml-5{										margin-left: $space-5 !important;}
+.mr-5{										margin-right: $space-5 !important;}
+
+.mt-xs{										margin-top: $space-xs !important;}
+.mb-xs{										margin-bottom: $space-xs !important;}
+.ml-xs{										margin-left: $space-xs !important;}
+.mr-xs{										margin-right: $space-xs !important;}
+
+.mt-sm{										margin-top: $space-sm !important;}
+.mb-sm{										margin-bottom: $space-sm !important;}
+.ml-sm{										margin-left: $space-sm !important;}
+.mr-sm{										margin-right: $space-sm !important;}
+
+.mt-md{										margin-top: $space-md !important;}
+.mb-md{										margin-bottom: $space-md !important;}
+.ml-md{										margin-left: $space-md !important;}
+.mr-md{										margin-right: $space-md !important;}
+
+.mt-lg{										margin-top: $space-lg !important;}
+.mb-lg{										margin-bottom: $space-lg !important;}
+.ml-lg{										margin-left: $space-lg !important;}
+.mr-lg{										margin-right: $space-lg !important;}
+
+.mt-xl{										margin-top: $space-xl !important;}
+.mb-xl{										margin-bottom: $space-xl !important;}
+.ml-xl{										margin-left: $space-xl !important;}
+.mr-xl{										margin-right: $space-xl !important;}
+
+.mt-xxl{									margin-top: $space-xxl !important;}
+.mb-xxl{									margin-bottom: $space-xxl !important;}
+.ml-xxl{									margin-left: $space-xxl !important;}
+.mr-xxl{									margin-right: $space-xxl !important;}
+
+.mt-xxxl{									margin-top: $space-xxxl !important;}
+.mb-xxxl{									margin-bottom: $space-xxxl !important;}
+.ml-xxxl{									margin-left: $space-xxxl !important;}
+.mr-xxxl{									margin-right: $space-xxxl !important;}
+
+// PADDING
+.p-0{										padding: $space-0 !important;}
+.p-5{										padding: $space-5 !important;}
+.p-xs{										padding: $space-xs !important;}
+.p-sm{										padding: $space-sm !important;}
+.p-md{										padding: $space-md !important;}
+.p-lg{										padding: $space-lg !important;}
+.p-xl{										padding: $space-xl !important;}
+.p-xxl{										padding: $space-xxl !important;}
+.p-xxxl{									padding: $space-xxxl !important;}
+
+.pt-0{										padding-top: $space-0 !important;}
+.pb-0{										padding-bottom: $space-0 !important;}
+.pl-0{										padding-left: $space-0 !important;}
+.pr-0{										padding-right: $space-0 !important;}
+
+.pt-5{										padding-top: $space-5 !important;}
+.pb-5{										padding-bottom: $space-5 !important;}
+.pl-5{										padding-left: $space-5 !important;}
+.pr-5{										padding-right: $space-5 !important;}
+
+.pt-xs{										padding-top: $space-xs !important;}
+.pb-xs{										padding-bottom: $space-xs !important;}
+.pl-xs{										padding-left: $space-xs !important;}
+.pr-xs{										padding-right: $space-xs !important;}
+
+.pt-sm{										padding-top: $space-sm !important;}
+.pb-sm{										padding-bottom: $space-sm !important;}
+.pl-sm{										padding-left: $space-sm !important;}
+.pr-sm{										padding-right: $space-sm !important;}
+
+.pt-md{										padding-top: $space-md !important;}
+.pb-md{										padding-bottom: $space-md !important;}
+.pl-md{										padding-left: $space-md !important;}
+.pr-md{										padding-right: $space-md !important;}
+
+.pt-lg{										padding-top: $space-lg !important;}
+.pb-lg{										padding-bottom: $space-lg !important;}
+.pl-lg{										padding-left: $space-lg !important;}
+.pr-lg{										padding-right: $space-lg !important;}
+
+.pt-xl{										padding-top: $space-xl !important;}
+.pb-xl{										padding-bottom: $space-xl !important;}
+.pl-xl{										padding-left: $space-xl !important;}
+.pr-xl{										padding-right: $space-xl !important;}
+
+.pt-xxl{									padding-top: $space-xxl !important;}
+.pb-xxl{									padding-bottom: $space-xxl !important;}
+.pl-xxl{									padding-left: $space-xxl !important;}
+.pr-xxl{									padding-right: $space-xxl !important;}
+
+.pt-xxxl{									padding-top: $space-xxxl !important;}
+.pb-xxxl{									padding-bottom: $space-xxxl !important;}
+.pl-xxxl{									padding-left: $space-xxxl !important;}
+.pr-xxxl{									padding-right: $space-xxxl !important;}
+
+.fit-content {								
+	width: -webkit-fit-content !important;
+	width: -moz-fit-content !important;
+	width: fit-content !important;
+}
+
+// -----------------
+// 4. INPUT
+// -----------------
+// btn black in hover bgcolor white border black
+.btn-black-hover-white-border-black{					
+	background-color: $black;
+	color: $white;
+	&:hover, &:focus, &:active {
+		border: $space-1 solid $black;
+		background-color: rgba(255, 255, 255, 0.8);
+		color: $black !important;
+		-webkit-transition: 0.4s ease;
+		-moz-transition: 0.4s ease;
+		-o-transition: 0.4s ease;
+		transition: 0.4s ease;
+	}
+}
+// btn black in hover bgcolor white border grey
+.btn-black-hover-white-border-grey{
+	background-color: $black;
+	color: $white;
+	&:hover, &:focus, &:active{
+		border: $space-1 solid $grey;
+		background-color: rgba(255, 255, 255, 0.8);
+		color: $black !important;
+		-webkit-transition: 0.4s ease;
+		-moz-transition: 0.4s ease;
+		-o-transition: 0.4s ease;
+		transition: 0.4s ease;
+	}
+}
+// btn black in hover bgcolor transparent border black
+.btn-black-hover-transparent-border-black{
+	background-color: $black;
+	color: $white;
+	&:hover, &:focus, &:active{
+		border: $space-1 solid $black;
+		background-color: transparent;
+		color: $black !important;
+		-webkit-transition: 0.4s ease;
+		-moz-transition: 0.4s ease;
+		-o-transition: 0.4s ease;
+		transition: 0.4s ease;
+	}
+}
+// btn black border white in hover bgcolor white border white
+.btn-black-border-white-hover-white{
+	border: $space-1 solid $white; 
+	background-color: $black;
+	color: $white;
+	&:hover {
+		border: $space-1 solid $white;
+		background-color: $white;
+		color: $black !important;
+		-webkit-transition: 0.4s ease;
+		-moz-transition: 0.4s ease;
+		-o-transition: 0.4s ease;
+		transition: 0.4s ease;
+	}
+}
+// btn transparent border black in hover color & bgcolor black
+.btn-transaparent-border-black-hover-black{
+	border: $space-1 solid $black;
+	background-color: transparent;
+	color: $black;
+	&:hover {
+		background-color: $black;
+		color: $white !important;
+		-webkit-transition: 0.4s ease;
+		-moz-transition: 0.4s ease;
+		-o-transition: 0.4s ease;
+		transition: 0.4s ease;
+	}
+}
+.btn-white-border-grey-hover-black{
+	border: $space-1 solid $grey;
+	background-color: $white;
+	color: $black;
+	&:hover {
+		background-color: $black;
+		color: $white !important;
+		-webkit-transition: 0.4s ease;
+		-moz-transition: 0.4s ease;
+		-o-transition: 0.4s ease;
+		transition: 0.4s ease;
+	}
+}
+.btn-white-border-black-hover-black{
+	border: $space-1 solid $black;
+	background-color: $white;
+	color: $black;
+	&:hover {
+		background-color: $black;
+		color: $white !important;
+		-webkit-transition: 0.4s ease;
+		-moz-transition: 0.4s ease;
+		-o-transition: 0.4s ease;
+		transition: 0.4s ease;
+	}
+}
+.btn-search {
+	background-color: transparent;
+	color: $black;
+	height: 32px;
+	width: 32px;
+	margin-right: $space-5;
+	margin-top: $space-5;
+	padding: $space-0;
+	&:hover {
+		background-color: $black;
+		color: $white !important;
+		-webkit-transition: 0.4s ease;
+		-moz-transition: 0.4s ease;
+		-o-transition: 0.4s ease;
+		transition: 0.4s ease;
+	}
+}
+.btn-share{
+	font-size: $text-regular;
+	height: $space-md;
+	margin: $space-0 !important;
+	padding: $space-1 6px !important;
+	line-height: 17px;
+}
+.btn-socmed {
+	// background-color: $white;
+	border: 3px solid;
+	border-radius: 300px;
+	color: $white;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	font-size: 24px;
+	text-align: center;
+	&:hover {
+		background-color: $white;
+		border: 3px solid $white;
+		color: $black;
+		-webkit-transition: 0.4s ease;
+		-moz-transition: 0.4s ease;
+		-o-transition: 0.4s ease;
+		transition: 0.4s ease;
+	}
+	@media screen and (max-width: 480px) {
+		height: 35px;
+		width: 35px;
+		font-size: 12px;
+		padding: 7px 7px;
+	}
+	@media (min-width: 481px) and (max-width: 767px) {
+		height: 40px;
+		width: 40px;
+		font-size: 16px;
+		padding: 7px 10px;	
+	}
+	&.info {
+		color: $black;
+		&:hover {
+			background-color: $black;
+			border: 3px solid $black;
+			color: $white;
+			-webkit-transition: 0.4s ease;
+			-moz-transition: 0.4s ease;
+			-o-transition: 0.4s ease;
+			transition: 0.4s ease;
+		}
+	}
+}
+// -----------------
+// 5. BACKGROUND
+// -----------------
+.bg-login-page{
+	background: url($bg-balin) no-repeat 50% 25%;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.bg-login-page-mobile{
+	background: url($bg-balin-mobile) no-repeat center center;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.bg-campaign-page{
+	background: url($bg-balin) no-repeat 50% 25%;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.bg-black{				background-color: $black !important;}
+.bg-white{				background-color: $white !important;}
+.bg-grey{				background-color: $grey !important;}
+.bg-grey-light{			background-color: $grey-light !important;}
+.bg-grey-dark{			background-color: $grey-dark !important;}
+.bg-transparent{		background-color: transparent !important;}
+.bg-color2{				background-color: $color2 !important;}
+.bg-red{				background-color: $red !important;}
+.bg-none{				background: none !important;}
+.bg-alert-success{		background-color: $black !important;}		
+.bg-alert-info{			background-color: #31708f !important;}
+.bg-alert-warning{		background-color: #8a6d3b !important;}
+.bg-alert-danger{		background-color: #d91e18 !important;}
+.bg-orange{				background-color: $orange !important;}
+.bg-transparent-8{		background-color: rgba(0, 0, 0, .8) !important;}
+
+// -----------------
+// 6. POSITION
+// -----------------
+.inline{				display: inline !important;}
+.inline-block{			display: inline-block !important;}
+.absolute{				position: absolute !important;}
+.relative{				position: relative !important;}
+.top{					top: $space-0 !important;}
+.bottom{				bottom: $space-0 !important;}
+.left{					left: $space-0 !important;}
+.right{					right: $space-0 !important;}
+
+.overflowellipsis{		overflow: ellipsis;} 
+.overflowscroll{		overflow: scroll;}
+.vertical-baseline{ 	vertical-align: baseline !important;}

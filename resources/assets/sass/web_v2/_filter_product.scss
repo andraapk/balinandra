@@ -1,0 +1,40 @@
+.subtags, .category, .sort {
+	a {
+		display: block;
+		margin-left: 5px;
+		li {
+			padding-top: 13px;
+			padding-bottom: 13px;
+			padding-left: 25px;
+			&:hover{background-color: $color1;}
+			&:active{background-color: $black;}
+		}
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
+.category-device, .filter-device, .sort-device {
+	li.active {
+		background-color: $black;
+		color: $white;
+	}
+}
+.icon-filter {
+    position: absolute;
+    margin-left: 15%;
+	height: 25px;
+    width: 25px;
+}
+.filter-mobile {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 5;
+	ul.category-list > li > span, ul.sort-list > li > span{
+		width: 14.23px;
+		height: 13px;
+		font-size: 11px;
+	}
+}

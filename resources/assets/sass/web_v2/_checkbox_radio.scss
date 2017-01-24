@@ -1,0 +1,95 @@
+.radio-custom, .checkbox-custom {
+	label {
+		display: inline-block;
+		cursor: pointer;
+		position: relative;
+		padding-left: 25px;
+		margin-right: 15px;
+		font-size: $text_regular;
+		&:before {
+			content: "";
+			border: 1px solid #d5d5d5;
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			left: 0;
+			position: absolute;
+			background-color: transparent;
+		}
+	}
+	input[type=radio], input[type=checkbox] {
+	  display: none;
+	}
+}
+.radio-custom {
+	label:before {
+	  	border-radius: 8px;
+	}
+	input[type=radio]:checked + label:before {
+		content: "\2022";
+		color: $grey-dark;
+		font-size: 20px;
+		text-align: center;
+		line-height: 10px;
+	}
+}
+.checkbox-custom {
+	label{
+		font: normal normal normal 14px/1 FontAwesome;
+		&:before {
+			border-radius: 0px;	
+		}
+		span {
+			font-family: "Lato", sans-serif;
+			-webkit-font-smoothing: subpixel-antialiased;
+			line-height: 15px;
+		}
+	}
+	input[type=checkbox]:checked + label:before {
+		content: "\f00c";
+		font-size: 10px;
+		color: $grey-dark;
+		text-align: center;
+		line-height: 15px;
+	}
+}
+.checkbox-color {
+	li {
+		vertical-align: top;
+		padding-left: 0px;
+		padding-right: 0px;
+		border: 1px solid $grey;
+		&.active {
+			border: 2px solid $black;
+			.color-item {
+				border: 2px solid $white;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+	.color-item {
+		width: 24px;;
+		height: 24px;
+		display: block;
+		cursor: pointer;
+	}
+	@media screen and (max-width: 767px) {
+		li.active {
+			.color-item {
+				width: 26px;
+				height: 26px;
+			}
+		}
+		.color-item {
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.control--checkbox{
+		text-align:center;
+	}
+}

@@ -1,0 +1,24 @@
+.border-left-divider-to-top {
+	@media screen and (max-width: 767px) {
+		border-top: 1px solid $grey-light; 
+	}
+	@media screen and (min-width: 768px) {
+		border-left: 1px solid $grey-light; 
+	}
+}
+.border-right-divider-to-bottom {
+	@media screen and (max-width: 767px) {
+		border-bottom: 1px solid $grey-light;
+	}
+	@media screen and (min-width: 768px) {
+		border-right: 1px solid $grey-light;
+	}
+}
+.border-right-divider-to-hide {
+	// @media screen and (max-width: 767px) {
+		// border-right: none;
+	// }
+	@media screen and (min-width: 768px) {
+		border-right: 1px solid $grey-light;
+	}
+}

@@ -1,0 +1,12 @@
+.countdown div{
+	float: left;
+    margin-right: 4px;
+    font-size: inherit;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 420px) {
+	.countdown div{
+	    font-size: 22px;
+	}
+}

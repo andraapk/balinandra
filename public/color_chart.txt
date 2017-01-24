@@ -1,0 +1,16 @@
+coklat,#AC703D
+peach,#EEC5A0
+krem,#F4DCB5
+hijau,#668D3C
+biru,#007996
+merah,#C0362C
+hitam,#000000
+putih,#FFFFFF
+pink,#ffc0d0
+kuning,#FFFF32
+oranye,#FF9642
+ungu,#bba3d0
+maroon,#800000
+beige,#F5F5DC
+plum,#DDA0DD
+magenta,#ff32ff

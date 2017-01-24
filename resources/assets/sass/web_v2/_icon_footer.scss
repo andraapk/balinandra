@@ -1,0 +1,30 @@
+a.social-url-footer:hover {
+	color: $orange;
+	.icon-stack-2 {
+		color: $orange;
+	}
+	.icon-stack-1 {
+		color: $white;
+	}
+}
+.icon-span {
+	width:	1.4em !important;
+	height: 1.4em !important;
+	line-height: 1.4em !important;
+}
+.icon-stack-2 {
+	font-size: $text-xxl !important;
+	line-height: (12.1em / 12) !important;
+	color: $black;
+	&:hover {
+		color: $orange;
+	}
+}
+.icon-stack-1 {
+	font-size: $text-regular !important;
+	line-height: (26.94em / 12) !important;
+	color: $white;
+	&:hover {
+		color: $white;
+	}
+}

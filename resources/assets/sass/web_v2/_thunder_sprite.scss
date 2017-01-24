@@ -1,0 +1,93 @@
+.sprite {
+	background: url("../../images/sprite.png") no-repeat;
+}
+.sprite-vendor {
+	background: url("../../images/sprite-vendor.png") no-repeat;	
+}
+
+@mixin sprite-vendor-logo($position) {
+	background-position: $position;
+	vertical-align: middle;
+	width: 100px;
+	height: 14px;
+	display: inline-block;
+	background-size: 100%; 
+}
+
+@mixin sprite-vendor($position) {
+	background-position: $position;
+	vertical-align: middle;
+	width: 70px;
+	height: 47px;
+	display: inline-block;
+}
+
+@mixin sprite-large($position) {
+	width: 20px;
+	height: 56px;
+	display: inline-block;
+	background-position: $position;
+	zoom: 0.8;
+	-moz-transform: scale(0.8);
+	-moz-transform-origin: 0 0;
+}
+
+@mixin sprite-medium($position) {
+	width: 20px;
+	height: 26px;
+	display: inline-block;
+	background-position: $position;
+}
+
+// for navbar
+.man-white {
+	@include sprite-large(0 0px);
+}
+.man-orange {
+	@include sprite-large(0 -112px);
+}
+.woman-white {
+	@include sprite-large(0 -56px);
+}
+.woman-orange {
+	@include sprite-large(0 -168px);
+}
+// sprite for navbar shortcut
+.man-black-medium {
+	@include sprite-medium(0 -224px);
+}
+.woman-black-medium {
+	@include sprite-medium(0 -250px);
+}
+.home-black-medium {
+	@include sprite-medium(0 -276px);
+}
+.profile-black-medium {
+	@include sprite-medium(0 -302px);
+}
+.signin-black-medium {
+	@include sprite-medium(0 -328px);
+}
+.signout-black-medium {
+	@include sprite-medium(0 -354px);
+}
+// sprite for list vendor payment
+.vendor-bca {
+	@include sprite-vendor(-3px 5px);
+}
+.vendor-visa {
+	@include sprite-vendor(-80px 1px);
+}
+.vendor-atm-bersama {
+	@include sprite-vendor(-79px -45px);
+}
+.vendor-master-card {
+	@include sprite-vendor(0 -47px);
+}
+.vendor-mandiri {
+	@include sprite-vendor(-8px -138px);
+}
+// for vendor logo
+.vendor-midtrans {
+	@include sprite-vendor-logo(0 -70px);
+}

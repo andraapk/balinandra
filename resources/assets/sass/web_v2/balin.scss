@@ -1,0 +1,309 @@
+// --------------
+// VARIABLE
+// --------------
+
+// font
+$text-xxxl:				30px;
+$text-xxl:				24px;
+$text-xl:				20px;
+$text-lg:				16px;
+$text-md:				14px;
+$text-regular:			12px;
+$text-sm:				11px;
+$text-xs:				9px;
+
+
+// color
+$red:					#d91e18;
+$grey: 					#f0f0f0;
+$grey-dark:				#505050;
+$grey-light: 			#e5e5e5;
+$black:					#000;
+$charcoal: 				#333;
+$gold:					#c38322;
+$gold-light:			#e18a07;
+$white:					#fff;
+$orange: 				#ffa500;
+$color1: 				#000;
+$color2: 				#dedede;
+$color3: 				#f8afad;
+$facebook: 				#3B5998;
+
+// space
+$space-0:				0px;
+$space-1:				1px;
+$space-2:				2px;
+$space-3:				3px;
+$space-4:				4px;
+$space-5:				5px;
+$space-8:				8px;
+$space-xs:				10px;
+$space-sm:				15px;
+$space-md:				20px;
+$space-lg:				25px;
+$space-xl:				30px;
+$space-xxl:				35px;
+$space-xxxl:			40px;
+
+$bg-balin: 				"http://drive.thunder.id/file/public/4/10/2016/08/11/15/balin-bg.jpg";
+$bg-balin-mobile: 		"/images/balin-bg-mobile.jpg";
+
+
+@import "thunder_sprite";
+@import "bootstrap";
+@import "variable";
+@import "nav";
+@import "breadcrumb";
+@import "buttons";
+@import "border";
+@import "input-groups";
+@import "collapse";
+@import "countdown";
+@import "productgrid";
+@import "filter_product";
+@import "search_product";
+@import "form";
+@import "quantity_control";
+@import "checkout_step";
+@import "owl_carousel";
+@import "control_owl_carousel";
+@import "border_divider";
+@import "loading";
+@import "easyzoom";
+@import "tile";
+@import "card";
+@import "icon_footer";
+@import "checkbox_radio";
+@import "footer";
+@import "spacing";
+
+html, body {
+	height: 90%;
+}
+body {
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+}
+.wrapper {
+	min-height: 100%;
+	&:after {
+		content: "";
+		display: block;
+	}
+}
+.cursor-pointer{
+	cursor:pointer;
+}
+
+.gift-value.hide{
+	-webkit-transition: 0.4s ease;
+	-moz-transition: 0.4s ease;
+	-o-transition: 0.4s ease;
+	transition: 0.4s ease;
+}
+
+.info-point .title {
+	color : #eee;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	cursor: default;
+	padding: 7px;
+}
+
+.info-point .value {
+	color : #222222;
+	background-color: #eee;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	cursor: default;	
+	padding: 7px;
+}
+
+.home{
+	padding-top: 50px !important;
+}
+
+.background-white{
+	background-color: white;
+}
+
+.home-tab{
+	color: #777 !important;
+	font-size: 16px;
+}
+
+.home-tab:focus{
+	text-decoration: none;
+}
+
+.home-tab-active{
+	color: black !important;
+	border-bottom: black 1px solid !important;
+	pointer-events: none;
+    cursor: default;
+}
+
+
+.btn-banner{
+	min-width: 70px;
+}
+
+/* general */
+@media screen and (max-width: 991px) {
+	.desktop-only{
+		display: none;
+	}
+}
+@media screen and (min-width: 992px) {
+	.mobile-only{
+		display: none;
+	}
+}
+
+/* Home Section */
+.home-product-more{
+    float: right;
+    margin-top: -20px;
+    margin-right: 13px;
+    color: black;
+}
+.home-product-more:hover{
+    color: #ffa500;
+}
+
+
+/** mobile **/
+.shop-by-style-mobile{
+	margin-top: 10px;
+}
+
+.shop-by-style-mobile .title{
+	font-family: 'Sacramento', cursive;
+	padding-botom: 0.2rem;
+}
+.shop-by-style-mobile .content{
+	margin-top: 0.5rem;
+	padding-left:25px; 
+	padding-right:25px;
+}
+.shop-by-style-mobile .content img{
+	height: 39vw;
+}
+.instagram-mobile {
+	margin-left:0px; 
+	margin-right:0px;
+	padding-left:25px; 
+	padding-right:25px;
+}
+.footer-mobile{
+	margin-bottom:70px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+	.footer-mobile{
+		margin-bottom: 0px;
+	}
+}
+.footer-mobile .info{
+	line-height: 1.6em;
+    font-size: 11px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/** tablet **/
+@media screen and (min-width: 768px) and (max-width: 992px){
+	.home-slider{
+		margin-top: 60px;
+	}
+}
+
+/** desktop **/
+@media screen and (min-width: 993px){
+	.home-slider{
+		margin-top: 60px;
+	}
+}
+.shop-by-style-desktop .title{
+	font-family: 'Sacramento', cursive;
+	font-size: 6.2rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+/** Product Show **/
+.cart-remove.not-active, .cart-add.not-active {
+   color: #c0c0c0 !important;
+   pointer-events: none;
+   cursor: default;
+}
+
+/** Page Akun **/
+	.background{
+		background-color: rgba(0, 0, 0, .8);
+	    min-height: calc(100vh - 59px);
+	}
+	.preface{
+		padding-top: 8vh;
+		color:white;
+		font-weight: 300;
+	}
+	.preface .logo{
+		width:250px;
+		margin-left:5px;
+	}
+	.preface .tagline{
+		font-style: italic;
+		margin-top: 5px;
+		font-size: 12px;
+	}
+	.preface .large{
+		font-style: italic;
+		font-size: 24px;
+		line-height: 1.4
+	}
+	.preface .auth{
+	    position: absolute;
+	    top: 82vh;
+	}
+	.preface .auth a{
+		color: orange;
+		font-weight: 400;
+	}
+	.panel-akun, .panel-akun a, .panel-akun a:hover, .panel-akun a:active, .panel-akun a:visited{
+		color: white;
+	}
+	.panel-akun .form-control{
+		height: 55px;
+	}
+	.panel-akun .form-group{
+		margin-bottom: 20px;
+	}
+	.panel-akun .input-group-addon{
+		color: white;
+		background-color: #505050;
+		border:none;
+	}
+	.panel-akun .form-control{
+		border:none;
+	} 
+
+.redeem-content {
+	top: 15vh; 
+	position: absolute; 
+	width: 100%;
+	@media screen and (max-width: 767px) {
+		top: inherit;
+	}
+}
+.drop-down {
+	background-image: url(http://drive.thunder.id/file/public/4/10/2016/09/21/10/Sort%20Down-48.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30px 40px;
+}
+.img-fit > p > img {
+	width: 100%;
+}

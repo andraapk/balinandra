@@ -1,0 +1,73 @@
+@mixin card-image($width, $height) {
+	width: $width;
+	height: $height;
+}
+.row-card {
+	display: flex;
+	flex-flow: row wrap;
+}
+.card{
+	a {
+		display: block;
+		position: relative;
+		text-decoration: none;
+		&:hover {
+			.hover {
+				background-color: rgba(229,229,229,0.18);
+				position: absolute;
+				top: 0;
+				i {
+					display: block;
+				}
+			}
+		}
+		img {
+			background-image: url('/images/loading-balin.gif');
+			background-repeat: no-repeat;
+			background-size: 60px;
+			background-position: 50% 50%;
+			min-height: 226px;
+			max-height: 335px;
+		}
+	}
+	.hover {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;	
+		z-index: 1;
+		-webkit-transition: all .2s ease-in;
+		-moz-transition: all .2s ease-in;
+		-o-transition: all .2s ease-in;
+		transition: all .2s ease-in;
+		i {
+			-webkit-transition: all .2s ease-in;
+			-moz-transition: all .2s ease-in;
+			-o-transition: all .2s ease-in;
+			transition: all .2s ease-in;
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	h4.font {
+		@media screen and (max-width: 767px) {
+			font-size: 16px;
+		}
+	}
+	p.font {
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+		}
+	}
+	ul.font {
+		@media screen and (max-width: 767px) {
+			font-size: 12px;
+		}
+	}
+}
+.card_product_desktop{
+	min-height: 463px;
+}
